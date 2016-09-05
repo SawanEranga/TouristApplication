@@ -3,7 +3,7 @@
 !*/sep_ii_pro/logs/index.html
 */sep_ii_pro/cache/*
 !*/sep_ii_pro/cache/index.html
-!*/sep_ii_pro/cache/.htaccess
+sep_ii_pro/.htaccess
 sep_ii_pro/nbproject/
 sep_ii_pro/application/config/
 local.properties
