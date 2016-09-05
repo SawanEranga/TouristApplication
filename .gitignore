@@ -1,6 +1,11 @@
 */sep_ii_pro/config/development
-*/sep_ii_pro/logs/log-*.php
+*/sep_ii_pro/application/logs/log-*.php
 !*/sep_ii_pro/logs/index.html
 */sep_ii_pro/cache/*
 !*/sep_ii_pro/cache/index.html
 !*/sep_ii_pro/cache/.htaccess
+sep_ii_pro/nbproject/
+sep_ii_pro/application/config/
+local.properties
+TourSriLanka/.gradle/
+TourSriLanka/build/
