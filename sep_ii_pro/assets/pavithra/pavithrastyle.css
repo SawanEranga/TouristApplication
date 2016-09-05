@@ -1,0 +1,70 @@
+
+body{
+
+  overflow-x: hidden;
+}
+
+.P_login_page{
+
+  width: 50%;
+  margin: 0 auto;
+border-radius: 5px;
+background-color: rgba(0,0,0,0.7);
+margin-top: 10vh;
+  padding:5%;
+  text-align: center;
+}
+
+.reg{
+  margin-left: 20%;
+}
+.P_login_page input{
+
+margin-bottom: 20px;
+  }
+#bg div{
+  background-size: cover!important;
+}
+
+.P_title{
+  color: white;
+}
+
+
+.P_text_bx{
+margin-bottom: 10px;
+  }
+
+.P_edit_caption .carousel-caption{
+  top:40%;
+}
+
+.P_cat_img{
+width: 100%;
+position: relative;
+}
+
+.P_text_on_image{
+
+  position: absolute;
+   bottom:5px;
+   left:5px;
+padding-right: 10px;
+   width: 100%;
+
+}
+.P_text_on_img_inner{
+position: relative;
+padding: 15px 10px;
+color:white;
+background-color:rgba(0,0,0,0.5);
+}
+.P_cat_img_figure{
+
+  padding:5px;
+}
+
+.makemousepointer{
+
+  cursor: pointer;
+}
