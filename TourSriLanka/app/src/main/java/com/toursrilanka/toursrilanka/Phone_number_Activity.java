@@ -2,12 +2,14 @@ package com.toursrilanka.toursrilanka;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.Image;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Display;
@@ -58,13 +60,30 @@ public class Phone_number_Activity extends Activity {
                     Button button_continue = (Button)findViewById(R.id.button_continue);
                     button_continue.setBackgroundColor(Color.parseColor("#00cc00"));
                 }
-                return true;
+                return false;
             }
         });
 
 
         slideBackground();
 
+    }
+
+        @Override
+    public void onBackPressed() {
+            new AlertDialog.Builder(this)
+
+                    .setMessage("Do you want to exit")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            System.exit(0);
+                        }
+
+                    })
+                    .setNegativeButton("No", null)
+                    .show();
     }
 
     public void slideBackground() {
@@ -146,9 +165,6 @@ public class Phone_number_Activity extends Activity {
 
     public void btn_continue_onclick(View v){
 
-        Button button_continue = (Button)findViewById(R.id.button_continue);
-        button_continue.setText("Fddfdf");
-
         TextView textView = (TextView)findViewById(R.id.editText);
         String text = textView.getText().toString();
         if(text.trim().length() == 0){
@@ -160,23 +176,7 @@ public class Phone_number_Activity extends Activity {
             TextView toast_error_textview = (TextView) toast_layout_error.findViewById(R.id.toast_error_textview);
 
             toast_error_textview.setText("please enter phone number");
-//            LayoutInflater layoutInflater12 = getLayoutInflater();
-//            View layout = layoutInflater12.inflate(R.layout.toast_loading_data,
-//                    (ViewGroup) findViewById(R.id.toast_layout_root));
 
-//            Typeface mycustomeFont = Typeface.createFromAsset(getAssets(), "fonts/GoodDog.otf");
-////            TextView textView_toast = (TextView)findViewById(R.id.toast_1_textview_1);
-//            tvToast.setTypeface(mycustomeFont);
-
-
-
-//            LayoutInflater layoutInflater12 = getLayoutInflater();
-//            View layout = layoutInflater12.inflate(R.layout.toast_layout_1,
-//                    (TextView) findViewById(R.id.toast_1_textview_1));
-
-//            TextView tvToast = (TextView) layout.findViewById(R.id.toast_text);
-
-//            tvToast.setText("Loading data for " + strDate + " ...");
 
             Toast toast1 = new Toast(getApplicationContext());
             toast1.setDuration(Toast.LENGTH_SHORT);
@@ -187,13 +187,13 @@ public class Phone_number_Activity extends Activity {
         else{
 
 //            boolean isInserted = db.insert_username(text);
-//
+
 //            if(isInserted){
-//                Intent i = new Intent(getApplicationContext(), select_level_Activity.class);
-//                i.putExtra("direction", "forward");
-//                i.putExtra("username", text);
-//                startActivity(i);
-//                finish();
+                Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
+                i.putExtra("direction", "forward");
+                i.putExtra("username", text);
+                startActivity(i);
+                finish();
 //            }
 
 

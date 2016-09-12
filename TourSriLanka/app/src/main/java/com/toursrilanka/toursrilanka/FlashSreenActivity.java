@@ -46,7 +46,7 @@ public class FlashSreenActivity extends Activity {
 
 
             }
-        }, 500);
+        }, 3500);
 
         progressBar = (ProgressBar)findViewById(R.id.progressBar_main);
 

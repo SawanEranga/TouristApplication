@@ -8,19 +8,16 @@
         android:label="Tour Sri Lanka"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FlashSreenActivity"
-            android:screenOrientation="portrait"
-            >
+        <activity android:name=".FlashSreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Phone_number_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".RegisterActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Phone_number_Activity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
