@@ -35,6 +35,15 @@
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/pavithra/css/main.css">
 		<!-- media-queries -->
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/pavithra/css/media-queries.css">
+        
+        
+        <!--Load css custom-->
+        <?php if (isset($css_to_load)){ ?>
+            <?php foreach ($css_to_load as $row){ 
+               echo "<link rel='stylesheet' href='" . base_url() . "assets/" . $row . "'></link>";
+            }
+         }?>
+        
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="<?php echo base_url() ?>assets/pavithra/js/modernizr-2.6.2.min.js"></script>
