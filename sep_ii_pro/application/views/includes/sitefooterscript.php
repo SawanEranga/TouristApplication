@@ -32,6 +32,14 @@ var Base_url = "http://localhost/sep_ii_pro/";
     <script src="<?php echo base_url() ?>assets/pavithra/js/jquery.easing.min.js"></script>
 <!-- jquery easing -->
     <script src="<?php echo base_url() ?>assets/pavithra/js/wow.min.js"></script>
+    
+    <!--Load js custom-->
+        <?php if (isset($js_to_load)){ ?>
+            <?php foreach ($js_to_load as $row){ 
+               echo "<script type='text/javascript' src='" . base_url() . "assets/" . $row . "'></script>";
+            }
+         }?>  
+    
 <script>
   var wow = new WOW ({
     boxClass:     'wow',      // animated element css class (default is wow)

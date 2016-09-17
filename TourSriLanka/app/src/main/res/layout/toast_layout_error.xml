@@ -18,7 +18,9 @@
         android:layout_centerHorizontal="true"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="18dp" />
 
     <ImageView
         android:layout_width="40dp"
@@ -30,7 +32,7 @@
         android:paddingLeft="5dp"
         android:paddingBottom="5dp"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/toast_1_textview_1"
-        android:layout_toStartOf="@+id/toast_1_textview_1"
-        android:layout_alignBottom="@+id/toast_1_textview_1" />
+        android:layout_toLeftOf="@+id/toast_error_textview"
+        android:layout_toStartOf="@+id/toast_error_textview"
+        android:layout_alignBottom="@+id/toast_error_textview" />
 </RelativeLayout>

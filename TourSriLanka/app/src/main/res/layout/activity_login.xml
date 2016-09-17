@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.toursrilanka.toursrilanka.RegisterActivity">
+    tools:context="com.toursrilanka.toursrilanka.LoginActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -26,10 +26,12 @@
         android:layout_centerHorizontal="true"
         android:background="#AA000000"/>
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView"
+        android:id="@+id/scrollView2"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" >
 
@@ -43,98 +45,68 @@
                 android:text="Sign up to our site"
                 android:textColor="#ffffff"
                 android:textSize="20dp"
-                android:layout_marginTop="50dp"
+                android:id="@+id/textView8"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_marginLeft="20dp"
-                android:id="@+id/textView2" />
+                android:layout_marginTop="50dp" />
 
             <ImageView
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:id="@+id/imageView2"
-                android:background="@drawable/t_register_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/t_login_logo"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="20dp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="150dp"
-                android:background="#ffffff"
-                android:hint="First name..."
-                android:paddingLeft="20dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginRight="23dp"
-                android:id="@+id/fist_name"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff"
-                android:hint="Last name..."
-                android:paddingLeft="20dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_below="@+id/fist_name"
-                android:id="@+id/last_name"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff"
-                android:hint="Email..."
-                android:paddingLeft="20dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_below="@+id/last_name"
-                android:id="@+id/email"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff"
-                android:hint="Password..."
-                android:paddingLeft="20dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_below="@+id/email"
-                android:id="@+id/password"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff"
-                android:hint="Confirm password..."
-                android:paddingLeft="20dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_below="@+id/password"
-                android:id="@+id/confirm_password"
+                android:layout_marginRight="20dp"
                 />
 
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:hint="User name..."
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:id="@+id/user_name"
+                android:layout_marginTop="150dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:hint="User name..."
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:id="@+id/password"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/user_name"/>
+
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/confirm_password"
+                android:layout_below="@+id/password"
                 android:background="#00cc00"
                 android:textColor="#ffffff"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:textSize="20dp"
                 android:layout_centerVertical="true"
-                android:text="Sign up"
-                android:layout_alignRight="@+id/confirm_password"
-                android:layout_alignEnd="@+id/confirm_password"
-                android:layout_alignLeft="@+id/confirm_password"
-                android:layout_alignStart="@+id/confirm_password"
+                android:text="Sign in"
                 android:id="@+id/button"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_alignRight="@+id/imageView3"
+                android:layout_alignEnd="@+id/imageView3"
+                android:onClick="sign_up_click" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -150,7 +122,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Do you have a account"
+                android:text="Don`t you have a account"
                 android:id="@+id/textView5"
                 android:layout_below="@+id/button"
                 android:layout_toLeftOf="@+id/textView6"
@@ -162,8 +134,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign in"
-                android:id="@+id/textView_sign_in"
+                android:text="Sign up"
+                android:id="@+id/textView_sign_up"
                 android:layout_below="@+id/button"
                 android:layout_toRightOf="@+id/textView6"
                 android:layout_toEndOf="@+id/textView6"
@@ -171,12 +143,11 @@
                 android:textSize="17dp"
                 android:textColor="#ff3300"
                 android:clickable="true"
-                android:onClick="sign_in_click" />
+                android:onClick="sign_up_click" />
 
 
         </RelativeLayout>
 
     </ScrollView>
-
 
 </RelativeLayout>

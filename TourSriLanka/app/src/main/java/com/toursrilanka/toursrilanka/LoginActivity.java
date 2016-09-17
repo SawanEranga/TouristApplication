@@ -13,12 +13,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class RegisterActivity extends Activity {
+public class LoginActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_login);
 
         overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
 
@@ -30,12 +30,12 @@ public class RegisterActivity extends Activity {
         slideBackground();
     }
 
-    public void sign_in_click(View v){
+    public void sign_up_click(View v){
 
-        TextView textView = (TextView)findViewById(R.id.textView_sign_in);
+        TextView textView = (TextView)findViewById(R.id.textView_sign_up);
         textView.setTextColor(Color.parseColor("#ffffff"));
 
-        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+        startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
         finish();
     }
 

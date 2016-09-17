@@ -21,9 +21,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('includes/siteheadder');
-		$this->load->view('includes/navigationbar');
 		$this->load->view('front_pages/home');
-		$this->load->view('includes/sitefooter');
-		$this->load->view('includes/sitefooterscript');
+			$this->load->view('includes/sitefooter');
 	}
 }

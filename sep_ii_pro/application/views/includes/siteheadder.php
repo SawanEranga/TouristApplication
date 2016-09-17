@@ -35,6 +35,15 @@
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/pavithra/css/main.css">
 		<!-- media-queries -->
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/pavithra/css/media-queries.css">
+        
+        
+        <!--Load css custom-->
+        <?php if (isset($css_to_load)){ ?>
+            <?php foreach ($css_to_load as $row){ 
+               echo "<link rel='stylesheet' href='" . base_url() . "assets/" . $row . "'></link>";
+            }
+         }?>
+        
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="<?php echo base_url() ?>assets/pavithra/js/modernizr-2.6.2.min.js"></script>
@@ -43,46 +52,7 @@
 
         <!-- pavithra's code -->
         		<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets\pavithra\pavithrastyle.css" />
-            <!-- add these page only if you are using slick slider -->
-            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/pavithra/slick/slick.css">
-            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/pavithra/slick/slick-theme.css">
-              <style type="text/css">
-                html, body {
-                  margin: 0;
-                  padding: 0;
-                }
 
-                * {
-                  box-sizing: border-box;
-                }
-
-                .slider {
-                    width: 100%;
-
-                }
-
-                .slick-slide {
-                  /*margin: 0px 20px;*/
-                }
-
-                .slick-slide img {
-                  width: 100%;
-                }
-
-                .slick-prev:before,
-                .slick-next:before {
-                    color: black;
-
-                    display: none;
-                }
-
-                .slick-next{
-                    right: 67px;
-                }
-              </style>
-
-
-<!--end pavithra's code->
 
 
 
