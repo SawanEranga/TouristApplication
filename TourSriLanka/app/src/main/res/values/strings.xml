@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Tour Sri Lanka</string>
 
-    <string-array name="planets_array">
+    <string-array name="all_countries_array">
         <item>select country</item>
         <item>Afghanistan</item>
         <item>Albania</item>
@@ -245,6 +245,12 @@
         <item>Zambia</item>
         <item>Zimbabwe</item>
     </string-array>
+    <string name="title_activity_home_drawer">HomeDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>
 
