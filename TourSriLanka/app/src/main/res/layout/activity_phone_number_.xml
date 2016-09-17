@@ -38,24 +38,19 @@
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
-    <Spinner
-        android:id="@+id/planets_spinner"
+    <AutoCompleteTextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_above="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:textSize="40dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:text="New Text"
-        android:id="@+id/textView3"
+        android:layout_height="45dp"
+        android:hint="Select country"
+        android:id="@+id/autoCompleteTextView"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="20dp"
+        android:completionThreshold="1"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -63,7 +58,7 @@
         android:inputType="phone"
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/autoCompleteTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#ffffff"
@@ -96,11 +91,11 @@
         android:layout_height="wrap_content"
         android:text="Your country"
         android:id="@+id/textView4"
-        android:layout_above="@+id/planets_spinner"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:textColor="#ffffff"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:layout_above="@+id/autoCompleteTextView" />
 
     <Button
         android:layout_width="match_parent"
