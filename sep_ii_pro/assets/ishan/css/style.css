@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 6, 2016, 10:21:56 PM
+    Author     : Ishan Ayesha
+*/
+
+/*top nav bar*/
+.I_header_nav{
+    border-top: 50px solid #333;
+}
+
+.I_page_body{
+    background-color:#f0f0f0;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.I_page_header{
+    padding-top:100px;
+    background-color: #eaeaea;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    
+}
+
+.I_page_header_text{
+    right: 200px; 
+    color: #4D4A49;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.I_profile_pic_bacground{
+    background-color:white;
+    border-right:10px solid #f0f0f0;
+    border-left:10px solid #f0f0f0;
+}
+
+.I_profile_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:250px;
+    height:250px;
+}
+
+.I_username{
+    padding:10px;
+    background-color:#00cc66;
+    color:white;
+    margin:auto;
+    text-align:center;
+    font-weight:bold;
+    font-size: 20px; 
+}
+
+.I_nav_baackground{
+    background-color:#00cc66;
+    margin:0px -5px;
+}
+
+.I_navbar_style{
+    margin: auto;
+    text-align:center;
+    color: #FFF;
+    font-size: 15px;
+    border-left: 1px solid rgba(255,255,255,0.2) !important;
+    border-right: 1px solid rgba(0,0,0,0.15) !important;
+    border-top: none;
+    border-bottom: none;
+    line-height: auto;
+    height: 36px;
+    width:150px;
+    border-radius: 0;
+}
+
+.I_tab_content_bacground{
+    padding-bottom:50px;
+    background-color:white;
+    margin:0px -5px;
+}
+
+.I_tab_content_sub_header{
+    font-weight:bold;
+    font-size:25px;   
+}
+
+
+.error_messages{
+    color: red;
+}
