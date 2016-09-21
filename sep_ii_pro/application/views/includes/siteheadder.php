@@ -44,6 +44,11 @@
             }
          }?>
         
+        <!--Set base URL for javascript-->
+        <input type="hidden" id="url" name="url" value="<?php echo base_url(); ?>"/>
+        <script>
+            var Base_url = document.getElementById("url").value;
+        </script>
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="<?php echo base_url() ?>assets/pavithra/js/modernizr-2.6.2.min.js"></script>
@@ -60,7 +65,7 @@
     </head>
 
     <body id="body" style="overflow-x: hidden;">
-
+        
 		<!-- preloader -->
 		<div id="preloader">
 			<img src="<?php echo base_url() ?>assets/pavithra/img/preloader.gif" alt="Preloader">

@@ -1,12 +1,6 @@
 <!-- Essential jQuery Plugins
 ================================================== -->
 
-<!--base URL-->
-
-<script type="text/javascript">
-var Base_url = "http://localhost/sep_ii_pro/";
-</script>
-
 <!-- Main jQuery -->
     <script src="<?php echo base_url() ?>assets/pavithra/js/jquery-1.11.1.min.js"></script>
 <!-- Single Page Nav -->
