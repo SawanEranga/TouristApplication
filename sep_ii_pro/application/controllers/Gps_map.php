@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @email sekandamby@gmail.com
  */
 
-class Register extends CI_Controller {
+class Gps_map extends CI_Controller {
 
 	/**
         * Constructor
@@ -16,20 +16,22 @@ class Register extends CI_Controller {
         * @return	none 
         */
 
-        public function __construct() {
-            parent::__construct();
-//            $this->load->model('User_model');
-        }
+//        public function __construct() {
+//            parent::__construct();
+////            $this->load->model('User_model');
+//        }
 
 
 
 	public function index()
 	{
-            $this->load->view('includes/siteheadder');
+            $data['js_to_load'] = array("sawan/js/s_gmap.js","sawan/js/HPNeo gmap/HPNeo_gmaps.js");
+            $data['css_to_load'] = array("sawan/css/mystyle1.css");
+            $this->load->view('includes/siteheadder',$data);
             $this->load->view('includes/navigationbar');
-            $this->load->view('catogery/display_one_catogery');
-            $this->load->view('includes/sitefooter');
-            $this->load->view('includes/sitefooterscript');
+            $this->load->view('gps_map/index');
+//            $this->load->view('includes/sitefooter');
+            $this->load->view('includes/sitefooterscript',$data);
 	}
         
         

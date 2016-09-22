@@ -21,7 +21,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <!-- Google Map -->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsAQASjLDim87C0ojgFxIY3rB2ZHMwq5M"></script>
 <!-- jquery easing -->
     <script src="<?php echo base_url() ?>assets/pavithra/js/jquery.easing.min.js"></script>
 <!-- jquery easing -->
