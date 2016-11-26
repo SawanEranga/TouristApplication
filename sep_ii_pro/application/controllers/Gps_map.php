@@ -16,10 +16,10 @@ class Gps_map extends CI_Controller {
         * @return	none 
         */
 
-//        public function __construct() {
-//            parent::__construct();
-////            $this->load->model('User_model');
-//        }
+        public function __construct() {
+            parent::__construct();
+//            $this->load->model('Gps_model');
+        }
 
 
 
@@ -29,10 +29,15 @@ class Gps_map extends CI_Controller {
             $data['css_to_load'] = array("sawan/css/mystyle1.css");
             $this->load->view('includes/siteheadder',$data);
             $this->load->view('includes/navigationbar');
-            $this->load->view('gps_map/index');
-//            $this->load->view('includes/sitefooter');
+            $this->load->view('gps_map/index');  
             $this->load->view('includes/sitefooterscript',$data);
+            $this->load->view('includes/sitefooter');
 	}
+        
+//        public function load_cat(){
+//            $lec_det = $this->Gmap_model->load_cat();
+//            echo json_encode($lec_det);
+//        }
         
         
 }

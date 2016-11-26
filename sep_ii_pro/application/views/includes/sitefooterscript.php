@@ -1,4 +1,4 @@
-<!-- Essential jQuery Plugins
+.<!-- Essential jQuery Plugins
 ================================================== -->
 
 <!-- Main jQuery -->
@@ -21,18 +21,28 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <!-- Google Map -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsAQASjLDim87C0ojgFxIY3rB2ZHMwq5M"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsAQASjLDim87C0ojgFxIY3rB2ZHMwq5M&libraries=geometry"></script>-->
 <!-- jquery easing -->
     <script src="<?php echo base_url() ?>assets/pavithra/js/jquery.easing.min.js"></script>
 <!-- jquery easing -->
     <script src="<?php echo base_url() ?>assets/pavithra/js/wow.min.js"></script>
+    
+    
+    <!--Load absolute js-->
+        <?php if (isset($absolute_js_to_load)){ ?>
+            <?php 
+            foreach ($absolute_js_to_load as $row){ 
+               echo "<script type='text/javascript' src='" . $row . "'></script>";
+            }
+         }?>
     
     <!--Load js custom-->
         <?php if (isset($js_to_load)){ ?>
             <?php foreach ($js_to_load as $row){ 
                echo "<script type='text/javascript' src='" . base_url() . "assets/" . $row . "'></script>";
             }
-         }?>  
+         }?> 
+    
     
 <script>
   var wow = new WOW ({
@@ -112,3 +122,5 @@
     });
   });
 </script> -->
+</body>
+</html>

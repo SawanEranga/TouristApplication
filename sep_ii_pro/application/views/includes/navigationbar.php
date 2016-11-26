@@ -14,7 +14,7 @@
 
 					<!-- logo -->
                     <a class="navbar-brand" href="#body">
-						<h1 id="logo">
+						<h1 id="logo"> 
 							<img src="<?php echo base_url() ?>assets/pavithra/img/logo.png" alt="Brandi">
 						</h1>
 					</a>
